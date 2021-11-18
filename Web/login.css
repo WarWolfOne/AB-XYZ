@@ -32,18 +32,19 @@ h1 {
     border-radius: 48px;
 }
 
-.user. {
+.user {
     margin-top 50px;
 }
 
 input {
     width: 90%;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     padding:  10px 30px 30px 10px ;
     font-size: 16px;
     border: none;
     border-bottom: 1px solid #0149C1;
 }
+
 ::placeholder {
     color: #0149C1;
 }
@@ -62,10 +63,54 @@ input {
 }
 
 .login-btn {
-    margin-top: 25px;
+    margin-top: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.btn {
+    display: block;
+    width: 100px;
+    padding: 15px;
+    background-color: #0149C1;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    opacity: 1;
+    transition: .2s all;
+    cursor:  pointer;
+}
+
+.btn:hover {
+    opacity: 1;
+    background-color: #0080FF;
+}
+
+.criar-conta-psi {
+    color: #0149C1;
+    cursor: pointer;
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.criar-conta-psi:hover {
+    color: #0080FF;
+    text-decoration: underline;
+}
+
+.criar-conta-psq {
+    color: #0149C1;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.criar-conta-psq:hover {
+    color: #0080FF;
+    text-decoration: underline;
+}
