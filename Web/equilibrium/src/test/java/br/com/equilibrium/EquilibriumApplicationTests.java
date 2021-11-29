@@ -1,4 +1,4 @@
-package br.com.equilibrium.demo;
+package br.com.equilibrium;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

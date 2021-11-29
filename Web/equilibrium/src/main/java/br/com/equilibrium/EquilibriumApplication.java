@@ -1,4 +1,4 @@
-package br.com.equilibrium.demo;
+package br.com.equilibrium;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
