@@ -3,6 +3,8 @@ package br.com.equilibrium.main.usuario.pessoa;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 @Entity
 @Table(name = "pessoas")
@@ -27,5 +29,10 @@ public class Pessoa {
 
     @Column(name = "cpf")
     private String cpf;
+
+    @Column(name = "dataNascimento")
+    private String dataNascimento;
+    DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    LocalDate d = LocalDate.parse(dataNascimento, format);
 
 }
