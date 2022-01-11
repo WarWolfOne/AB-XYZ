@@ -1,15 +1,20 @@
 package br.com.equilibrium.main.usuario.pessoa;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 @Entity
 @Table(name = "pessoas")
+@Getter
+@Setter
 
-public class Pessoa {
+public class Pessoa implements Serializable { //Entender como o arquivo trata os dados
 
     private static final long serialVersionUID = 1L;
 
