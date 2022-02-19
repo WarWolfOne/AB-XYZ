@@ -3,16 +3,22 @@ package br.com.equilibrium.main.usuario.profissional;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table (name = "profissionaisSaude")
 @Getter
 @Setter
 
-public class Profissional {
+public class Profissional implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private long id;
 
     @Column(name = "nome")
     private String nome;
@@ -27,21 +33,21 @@ public class Profissional {
     private String telefone;
 
     @Column(name = "especialidade1")
-    public String especialidade1;
+    private String especialidade1;
 
     @Column(name = "especialidade2")
-    public String especialidade2;
+    private String especialidade2;
 
     @Column(name = "especialidade3")
-    public String especialidade3;
+    private String especialidade3;
 
     @Column(name = "especialidade4")
-    public String especialidade4;
+    private String especialidade4;
 
     @Column(name = "especialidade5")
-    public String especialidade5;
+    private String especialidade5;
 
     @Column(name = "valorHora")
-    public Double valorHora;
+    private Double valorHora;
 
 }
