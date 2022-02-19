@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "paciente")
+@Table(name = "pacientes")
 @Getter
 @Setter
 
@@ -23,6 +23,9 @@ public class Paciente implements Serializable { //Entender como o arquivo trata 
     @Column(name = "nome")
     private String nome;
 
+    @Column(name = "nomeSocial")
+    private String nomeSocial;
+
     @Column(name = "eMail")
     private String eMail;
 
@@ -31,6 +34,9 @@ public class Paciente implements Serializable { //Entender como o arquivo trata 
 
     @Column(name = "cpf")
     private String cpf;
+
+    @Column(name = "perfilPsicologico")
+    private String perfilPsicologico;
 
     /*@Column(name = "dataNascimento")
     private String dataNascimento;
