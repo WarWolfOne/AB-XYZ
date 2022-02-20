@@ -1,5 +1,6 @@
 package br.com.equilibrium.main.usuario.profissional.tipo;
 
+import br.com.equilibrium.main.usuario.profissional.Profissional;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,14 +12,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 
-public class Psicologo implements Serializable {
-
-    private static final long serialVersionUID = 1L;
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private long id;
+public class Psicologo extends Profissional {
 
     @Column(name = "CRP")
     private String CRP;
