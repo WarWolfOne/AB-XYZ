@@ -12,7 +12,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 
-public class Psicologo extends Profissional {
+public class Psicologo extends Profissional implements Serializable {
 
     @Column(name = "CRP")
     private String CRP;
