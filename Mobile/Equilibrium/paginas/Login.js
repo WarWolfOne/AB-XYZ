@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { SafeAreaView, StyleSheet, Text, TextInput, Button, TouchableHighlight, TouchableOpacity, View} from "react-native";
 import { globalStyles } from "../styles/Global";
-import CriarConta from "./CriarConta";
 
 export default function Login({navigation}) {
                               //parametro da propriedade navigate para a navegação entre telas.

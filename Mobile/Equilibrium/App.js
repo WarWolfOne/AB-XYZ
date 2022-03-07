@@ -14,7 +14,11 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator >
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="CriarConta" component={CriarConta} />
+        <Stack.Screen name="CriarConta" component={CriarConta} 
+        options={{
+          title: 'Criar Conta',
+        }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
