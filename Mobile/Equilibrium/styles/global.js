@@ -3,6 +3,13 @@ import { StyleSheet } from "react-native";
 export const globalStyles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: '#2A95FF',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontFamily: 'Roboto-Regular',
+      },
+      loginContainer: {
+        flex: 1,
         backgroundColor: '#0149C1',
         alignItems: 'center',
         justifyContent: 'center',
@@ -20,10 +27,15 @@ export const globalStyles = StyleSheet.create({
         borderColor: '#0149C1',
     },
     card: {
-        backgroundColor: '#E1FEFE',
+        backgroundColor: '#f6fff8',
         width: 320,
     borderRadius: 14,
     },
+    cardLogin: {
+      backgroundColor: '#E1FEFE',
+      width: 320,
+      borderRadius: 14,
+      },
     btnDiv: {
         alignItems: 'center',
         justifyContent: 'center',
