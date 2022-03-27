@@ -38,9 +38,9 @@ public class Paciente implements Serializable { //Entender como o arquivo trata 
     @Column(name = "perfilPsicologico")
     private String perfilPsicologico;
 
-    /*@Column(name = "dataNascimento")
+    @Column(name = "dataNascimento")
     private String dataNascimento;
-    DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    /*DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     LocalDate d = LocalDate.parse(dataNascimento, format);*/
 
 }

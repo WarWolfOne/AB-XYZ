@@ -1,2 +1,4 @@
-package br.com.equilibrium.main.consulta;public class Consulta {
+package br.com.equilibrium.main.consulta;
+
+public class Consulta {
 }
