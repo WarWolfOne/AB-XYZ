@@ -16,7 +16,8 @@ export default function Login({navigation}) {
         style={globalStyles.input}
         onChangeText={value => setEmail(value)}
         placeholder="E-Mail" // tipo de teclado.
-       // value={eMail}
+       
+        value={eMail}
       />
       <TextInput
         style={globalStyles.input}

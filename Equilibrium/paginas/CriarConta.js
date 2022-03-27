@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, Text, TextInput, Button, TouchableHighlight, View, ScrollView} from "react-native";
+import { SafeAreaView, StyleSheet, Text, TextInput, Button, TouchableHighlight, View, ScrollView, Picker} from "react-native";
 import { globalStyles } from "../styles/Global";
 
 export default function CriarConta({navigation}) {
@@ -15,21 +15,29 @@ export default function CriarConta({navigation}) {
       <TextInput
         style={globalStyles.input}
         onChangeText={value => setEmail(value)}
-        placeholder="E-Mail" // tipo de teclado.
+        placeholder="Nome Completo" // tipo de teclado.
        // value={eMail}
       />
       <TextInput
         style={globalStyles.input}
         onChangeText={value => setSenha(value)}
-        placeholder="Senha"
+        placeholder="Data de Nascimento"
         keyboardType="text" // tipo de teclado.
         secureTextEntry={true} // fazer que o texto da senha fique oculto.
        // value={senha}
       /><TextInput
       style={globalStyles.input}
       onChangeText={value => setEmail(value)}
-      placeholder="E-Mail" // tipo de teclado.
+      placeholder="Telefone" // tipo de teclado.
      // value={eMail}
+    />
+    <TextInput
+      style={globalStyles.input}
+      onChangeText={value => setSenha(value)}
+      placeholder="CPF"
+      keyboardType="text" // tipo de teclado.
+      secureTextEntry={true} // fazer que o texto da senha fique oculto.
+     // value={senha}
     />
     <TextInput
       style={globalStyles.input}
@@ -42,45 +50,11 @@ export default function CriarConta({navigation}) {
     <TextInput
         style={globalStyles.input}
         onChangeText={value => setSenha(value)}
-        placeholder="Senha"
+        placeholder="Confirmar"
         keyboardType="text" // tipo de teclado.
         secureTextEntry={true} // fazer que o texto da senha fique oculto.
        // value={senha}
-      /><TextInput
-      style={globalStyles.input}
-      onChangeText={value => setEmail(value)}
-      placeholder="E-Mail" // tipo de teclado.
-     // value={eMail}
-    />
-    <TextInput
-      style={globalStyles.input}
-      onChangeText={value => setSenha(value)}
-      placeholder="Senha"
-      keyboardType="text" // tipo de teclado.
-      secureTextEntry={true} // fazer que o texto da senha fique oculto.
-     // value={senha}
-    />
-    <TextInput
-        style={globalStyles.input}
-        onChangeText={value => setSenha(value)}
-        placeholder="Senha"
-        keyboardType="text" // tipo de teclado.
-        secureTextEntry={true} // fazer que o texto da senha fique oculto.
-       // value={senha}
-      /><TextInput
-      style={globalStyles.input}
-      onChangeText={value => setEmail(value)}
-      placeholder="E-Mail" // tipo de teclado.
-     // value={eMail}
-    />
-    <TextInput
-      style={globalStyles.input}
-      onChangeText={value => setSenha(value)}
-      placeholder="Senha"
-      keyboardType="text" // tipo de teclado.
-      secureTextEntry={true} // fazer que o texto da senha fique oculto.
-     // value={senha}
-    />
+      />
     <View style={globalStyles.btnDiv}>
       
       <TouchableHighlight style={globalStyles.btn}>

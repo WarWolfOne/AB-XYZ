@@ -5,14 +5,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
 @Table (name = "Psicologos")
 @Getter
 @Setter
 
-public class Psicologo extends Profissional implements Serializable {
+public class Psicologo extends Profissional {
 
     @Column(name = "CRP")
     private String CRP;
