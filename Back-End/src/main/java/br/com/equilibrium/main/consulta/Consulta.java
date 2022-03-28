@@ -32,5 +32,8 @@ public class Consulta implements Serializable { //Entender como o arquivo trata 
     @Column(name = "agenda")
     private String agenda;
 
+    @Column(name = "status")
+    private String status;
+
 
 }

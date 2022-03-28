@@ -1,7 +1,5 @@
 package br.com.equilibrium.main.consulta;
 
-import br.com.equilibrium.main.usuario.paciente.Paciente;
-import br.com.equilibrium.main.usuario.paciente.PacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.Errors;
@@ -22,7 +20,7 @@ public class ConsultaService {
         return consultaRepository.save(consulta);
     }
 
-    public Paciente findById(long id) {
+    public Consulta findById(long id) {
         return consultaRepository.findById(id).get();
     }
 
