@@ -1,10 +1,12 @@
 package br.com.equilibrium.main.usuario.profissional;
 
+import br.com.equilibrium.main.consulta.Consulta;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table (name = "profissionaisSaude")
@@ -19,6 +21,10 @@ public class Profissional implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private long id;
+
+    @OneToMany(mappedBy = "profissional")
+    private List<Consulta> consultaList;
+
 
     @Column(name = "nome")
     private String nome;

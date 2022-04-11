@@ -8,9 +8,9 @@ import SwitchSelector from 'react-native-switch-selector';
 export default function ListaProfissionais({navigation}) { 
 
     const options = [
-        { label: '01:00', value: '1' },
-        { label: '01:30', value: '1.5' },
-        { label: '02:00', value: '2' }
+        { label: 'Psicólogos', value: '1' },
+        { label: 'Psiquiatras', value: '2' },
+        { label: 'Geral', value: '3' }
     ];
 
     return (
@@ -21,12 +21,12 @@ export default function ListaProfissionais({navigation}) {
 
         <View style={globalStyles.select}>
             <SwitchSelector
-            height={50}
-            buttonColor={'#0055E3'}
-            backgroundColor={'#fff'}
-            borderColor={'#0055E3'}
-            options={options} initial={0} 
-            onPress={value => console.log(`Call onPress with value: ${value}`)} 
+                height={50}
+                buttonColor={'#0055E3'}
+                backgroundColor={'#fff'}
+                borderColor={'#0055E3'}
+                options={options} initial={0} 
+                onPress={value => console.log(`Call onPress with value: ${value}`)} 
         />
         </View>
 

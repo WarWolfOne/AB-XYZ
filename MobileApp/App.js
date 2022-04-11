@@ -27,19 +27,19 @@ export default function App() {
           },
         }}
       >
-        <Stack.Screen name="Home" component={Home} /> 
+        <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="CriarConta" component={CriarConta} 
+        <Stack.Screen name="CriarConta" component={CriarConta}
           options={{
             title: 'Criar Conta',
           }}
         />
-        <Stack.Screen name="SeCuide" component={SeCuide} 
+        <Stack.Screen name="SeCuide" component={SeCuide}
           options={{
             title: 'Se Cuide',
           }}
         />
-        <Stack.Screen name="ListaProfissionais" component={ListaProfissionais} 
+        <Stack.Screen name="ListaProfissionais" component={ListaProfissionais}
           options={{
             title: 'Procurar Atendimento',
           }}

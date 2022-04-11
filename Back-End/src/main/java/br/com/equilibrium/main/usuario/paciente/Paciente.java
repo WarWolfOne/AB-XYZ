@@ -1,10 +1,16 @@
 package br.com.equilibrium.main.usuario.paciente;
 
+import br.com.equilibrium.main.consulta.Consulta;
+import br.com.equilibrium.main.usuario.profissional.Profissional;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "pacientes")
@@ -19,6 +25,9 @@ public class Paciente implements Serializable { //Entender como o arquivo trata 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private long id;
+
+    @OneToMany(mappedBy = "paciente")
+    private List<Consulta> consultaList;
 
     @Column(name = "nome")
     private String nome;
@@ -39,8 +48,8 @@ public class Paciente implements Serializable { //Entender como o arquivo trata 
     private String perfilPsicologico;
 
     @Column(name = "dataNascimento")
-    private String dataNascimento;
-    /*DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-    LocalDate d = LocalDate.parse(dataNascimento, format);*/
+    @JsonFormat(pattern = "dd-MM-yyyy")
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
+    private Date dataNascimento;
 
 }
