@@ -43,7 +43,6 @@ export const globalStyles = StyleSheet.create({
       backgroundColor: '#f6fff8',
       height: 130,
       width: 320,
-      marginHorizontal: 20,
       paddingVertical: 10,
       marginVertical: 10,
       borderRadius: 14,
@@ -53,7 +52,6 @@ export const globalStyles = StyleSheet.create({
     select: {
       alignItems: 'center',
       width: 320,
-      margin: 20,
     },
 
     icon: {

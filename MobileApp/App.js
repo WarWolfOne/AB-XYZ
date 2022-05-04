@@ -1,18 +1,20 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Login from "./paginas/Login";
 import CriarConta from "./paginas/CriarConta"
 import Home from "./paginas/Home";
 import SeCuide from "./paginas/SeCuide";
 import ListaProfissionais from "./paginas/ListaProfissionais";
-import { color } from "react-native/Libraries/Components/View/ReactNativeStyleAttributes";
 
 //<Stack.Navigator initialRouteName="Home"> //Para definir a tela inicial.
 
 export default function App() {
 
   const Stack = createStackNavigator();
+
+  const Tab = createBottomTabNavigator();
 
   return (
     <NavigationContainer>
