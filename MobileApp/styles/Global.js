@@ -2,111 +2,108 @@ import { StyleSheet } from "react-native";
 
 export const globalStyles = StyleSheet.create({
 
-    container: {
-        flex: 1,
-        backgroundColor: '#298CEF',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontFamily: 'Roboto-Regular',
-        padding: 20,
-      },
+  container: {
+    flex: 1,
+    backgroundColor: "#90E0EF",
+    //padding: 20,
+    minWidth: 320,
+  },
 
-      loginContainer: {
-        flex: 1,
-        backgroundColor: '#0149C1',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontFamily: 'Roboto-Regular',
-      },
 
-      criarContainer: {
-        flex: 1,
-        backgroundColor: '#E1FEFE',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontFamily: 'Roboto-Regular',
-      },
+  left: {
+    alignItems: 'flex-end',
+  },
 
-    left: {
-      alignItems: 'flex-end',
-    },
+  center: {
+    alignItems: 'center',
+  },
 
-    input: {
-      height: 40,
-      margin: 10,
-      padding: 10,
-      borderBottomWidth: 1,
-      borderColor: '#0149C1',
-    },
+  inLine: {
+    flexDirection: "row",
+  },
 
-    card: {
-      backgroundColor: '#f6fff8',
-      height: 130,
-      width: 320,
-      paddingVertical: 10,
-      marginVertical: 10,
-      borderRadius: 14,
-      flexDirection: 'row',
-    },
+  card: {
+    backgroundColor: "#DCE9F6",
+    flexDirection: "row",
+    minHeight: 110,
+    margin: 20,
+    marginTop: 20,
+    marginBottom: 0,
+    padding: 10,
+    borderRadius: 12,
+  },
 
-    select: {
-      alignItems: 'center',
-      width: 320,
-    },
+  cardList: {
+    backgroundColor: "#DCE9F6",
+    minHeight: 110,
+    margin: 20,
+    marginVertical: 10,
+    padding: 10,
+    borderRadius: 12,
+  },
 
-    icon: {
-      marginVertical: 26,
-      marginHorizontal: 10,
-    },
+  selectView: {
+    margin: 20,
+  },
 
-    textBox: {
-      width: 220,
-      paddingHorizontal: 20,
-      padding: 10,
-    },
+  //Caixas de texto.
+  textBox: {
+    width: 220,
+    marginHorizontal: 10,
+    marginBottom: 10,
+  },
 
-    titulo: {
-      fontSize: 18,
-      fontWeight: '700',
-      color:'#0149C1',
-      marginBottom: 4,
-    },
+  textBoxFull: {
+    marginHorizontal: 10,
+    marginBottom: 10,
+  },
 
-    cardClear: {
-      width: 320,
-    },
+  textBoxLine: {
+    marginHorizontal: 10,
+    marginBottom: 10,
+  },
 
-    cardLogin: {
-      backgroundColor: '#E1FEFE',
-      width: 320,
-      borderRadius: 14,
-    },
+  //Fontes de texto. 
+  textTitle: {
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  
+  textBody: {
+    justifyContent: "center",
+    fontSize: 14,
+  },
 
-    btnDiv: {
-      alignItems: 'center',
-      justifyContent: 'center',
-      margin: 10,
-    },
+  textHighlight: {
+    color: "#0149C1",
+    fontSize: 14,
+  },
 
-    btnText: {
-      fontSize: 16,
-      fontWeight: 'bold',
-      color: '#ffffff',
-    },
+  tag: {
+    margin: 2,
+    marginStart: 0,
+    padding: 2,
+    paddingHorizontal: 8,
+    borderRadius: 10,
+    backgroundColor: "#C4C7DB",
+  },
 
-    btn: {
-      alignItems: 'center',
-      padding: 10,
-      width: 120,
-      borderRadius: 40,
-      backgroundColor: '#0149C1',
-    },
+  textTag:{
+    color: "#00B4D8",
+    fontSize: 10,
+    marginEnd: 2,
+  },
 
-    btnTextInLine: {
-        alignItems: 'center',
-        padding: 10,
-        fontSize: 16,
-        fontWeight: 'bold',
-        color: '#0149C1',
-      },
-  });
+  //Botões
+  inLineButtons:{
+    fontSize: 14,
+    fontWeight: "bold",
+    color: "#0149C1",
+  },
+
+  iconHome: {
+    justifyContent: "center",
+    margin: 10,
+  }
+
+});

@@ -22,8 +22,8 @@ public class Profissional implements Serializable {
     @Column(name = "id", nullable = false)
     private long id;
 
-    @OneToMany(mappedBy = "profissional")
-    private List<Consulta> consultaList;
+    //@OneToMany(mappedBy = "profissional")
+    //private List<Consulta> consultaList;
 
     @Column(name = "nome")
     private String nome;
@@ -31,11 +31,17 @@ public class Profissional implements Serializable {
     @Column(name = "nomeSocial")
     private String nomeSocial;
 
+    @Column(name = "CRP")
+    private String CRP;
+
     @Column(name = "eMail")
     private String eMail;
 
     @Column(name = "telefone")
     private String telefone;
+
+    @Column(name = "descricao")
+    private String descricao;
 
     @Column(name = "especialidade1")
     private String especialidade1;

@@ -25,11 +25,12 @@ public class Consulta implements Serializable { //Entender como o arquivo trata 
     private long id;
 
     @ManyToOne
-    @JoinColumn(name = "paciente_id")
+    @JoinColumn(name = "paciente_id", nullable = false)
     private Paciente paciente;
 
+
     @ManyToOne
-    @JoinColumn(name = "profissional_id")
+    @JoinColumn(name = "profissional_id", nullable = false)
     private Profissional profissional;
 
     @Column(name = "historicoMedico")
@@ -41,12 +42,12 @@ public class Consulta implements Serializable { //Entender como o arquivo trata 
     @Column(name = "recomendacoes")
     private String recomendacoes;
 
-    @Column(name = "agendamentoData")
+    @Column(name = "agendamentoData", nullable = false)
     @JsonFormat(pattern = "dd-MM-yyyy")
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     private Date agendamentoData;
 
-    @Column(name = "agendamentoHora")
+    @Column(name = "agendamentoHora", nullable = false)
     @JsonFormat(pattern = "HH:mm")
     @DateTimeFormat(pattern = "HH:mm")
     private Date agendamentoHora;

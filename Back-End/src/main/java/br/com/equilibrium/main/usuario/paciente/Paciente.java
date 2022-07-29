@@ -26,8 +26,8 @@ public class Paciente implements Serializable { //Entender como o arquivo trata 
     @Column(name = "id", nullable = false)
     private long id;
 
-    @OneToMany(mappedBy = "paciente")
-    private List<Consulta> consultaList;
+    //@OneToMany(mappedBy = "paciente")
+    //private List<Consulta> consultaList;
 
     @Column(name = "nome")
     private String nome;

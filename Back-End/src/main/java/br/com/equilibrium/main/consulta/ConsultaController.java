@@ -2,6 +2,7 @@ package br.com.equilibrium.main.consulta;
 
 import br.com.equilibrium.core.controller.ResponseAbtractController;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.Errors;
 import org.springframework.validation.annotation.Validated;
@@ -25,7 +26,7 @@ public class ConsultaController extends ResponseAbtractController {
         return jsonResponse(consultaService.findById(id));
     }
 
-    @PostMapping
+    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> save(@Validated @RequestBody Consulta consulta, Errors errors) {
         return jsonResponse(consultaService.save(consulta, errors));
     }
